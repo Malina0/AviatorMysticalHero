@@ -1,0 +1,10 @@
+<resources>
+
+    <style name="Theme.AviatorMysticalHero" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primaryMh</item>
+        <item name="colorSecondary">@color/secondaryMh</item>
+        <item name="android:statusBarColor">@color/backgroundMh</item>
+        <item name="android:windowBackground">@color/backgroundMh</item>
+    </style>
+
+</resources>

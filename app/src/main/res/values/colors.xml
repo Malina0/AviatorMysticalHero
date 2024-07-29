@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="surfaceMh">#000000</color>
+    <color name="surfaceVariantMh">#FFFFFF</color>
+    <color name="primaryMh">#008E4A</color>
+    <color name="secondaryMh">#CA2121</color>
+    <color name="onSecondaryMh">#FFFFFF</color>
+    <color name="onSecondaryMh_20">#33FFFFFF</color>
+    <color name="onPrimaryMh">#FFFFFF</color>
+    <color name="backgroundMh">#1C1C1C</color>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.StartMhFragment">
+
+    <ImageView
+        android:id="@+id/mh_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mh_bg_1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:src="@drawable/mh_logo" />
+
+        <TextView
+            android:id="@+id/mh_high"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold_mh"
+            android:paddingVertical="8dp"
+            android:textColor="@color/surfaceMh"
+            android:textSize="16sp"
+            tools:text="High Score: 3680" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/mh_start"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardBackgroundColor="@color/primaryMh"
+            app:cardCornerRadius="100dp"
+            app:contentPadding="8dp"
+            app:strokeColor="@color/onPrimaryMh"
+            app:strokeWidth="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat_bold_mh"
+                android:gravity="center"
+                android:text="START"
+                android:textColor="@color/onPrimaryMh"
+                android:textSize="20sp" />
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/mh_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|top"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="20.dp"
+        android:src="@drawable/mh_settings" />
+
+</FrameLayout>

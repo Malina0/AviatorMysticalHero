@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.GameMhFragment">
+
+    <ImageView
+        android:id="@+id/mh_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/mh_bg_1" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_marginBottom="-156dp"
+        android:src="@drawable/mh_fire" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/mh_field"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.7"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingEnd="32dp"
+            tools:ignore="RtlSymmetry">
+
+            <ImageView
+                android:id="@+id/mh_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="26dp"
+                android:src="@drawable/mh_settings" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/mh_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    app:cpb_background_progressbar_color="@color/onSecondaryMh"
+                    app:cpb_background_progressbar_width="15dp"
+                    app:cpb_progress="1200"
+                    app:cpb_progress_direction="to_right"
+                    app:cpb_progress_max="3600"
+                    app:cpb_progressbar_color="@color/secondaryMh"
+                    app:cpb_progressbar_width="15dp"
+                    app:cpb_round_border="true" />
+
+                <TextView
+                    android:id="@+id/mh_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/montserrat_medium_mh"
+                    android:gravity="center"
+                    android:paddingVertical="10dp"
+                    android:text="59:59"
+                    android:textColor="@color/surfaceVariantMh"
+                    android:textSize="32sp" />
+
+            </FrameLayout>
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="32dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/mh_score"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:background="@drawable/mh_red_field"
+                    android:fontFamily="@font/montserrat_bold_mh"
+                    android:gravity="center"
+                    android:paddingVertical="10dp"
+                    android:text="Score: 0"
+                    android:textColor="@color/surfaceVariantMh"
+                    android:textSize="14sp" />
+
+                <Space
+                    android:layout_width="12dp"
+                    android:layout_height="1dp" />
+
+                <TextView
+                    android:id="@+id/mh_high"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/mh_red_field"
+                    android:fontFamily="@font/montserrat_bold_mh"
+                    android:gravity="center"
+                    android:paddingVertical="10dp"
+                    android:text="High Score: 368"
+                    android:textColor="@color/surfaceVariantMh"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mh_reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="32dp"
+                android:foreground="?attr/selectableItemBackground"
+                app:cardBackgroundColor="@color/primaryMh"
+                app:cardCornerRadius="100dp"
+                app:contentPadding="8dp"
+                app:strokeColor="@color/onPrimaryMh"
+                app:strokeWidth="1dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_bold_mh"
+                    android:gravity="center"
+                    android:text="New game"
+                    android:textAllCaps="true"
+                    android:textColor="@color/onPrimaryMh"
+                    android:textSize="20sp" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

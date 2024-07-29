@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mh_ui"
+    app:startDestination="@id/splashMhFragment">
+
+    <fragment
+        android:id="@+id/gameMhFragment"
+        android:name="com.aviatormysticalhero.ui.GameMhFragment"
+        android:label="fragment_game_mh"
+        tools:layout="@layout/fragment_game_mh" />
+    <fragment
+        android:id="@+id/resultMhFragment"
+        android:name="com.aviatormysticalhero.ui.ResultMhFragment"
+        android:label="fragment_result_mh"
+        tools:layout="@layout/fragment_result_mh" />
+    <fragment
+        android:id="@+id/settingsMhFragment"
+        android:name="com.aviatormysticalhero.ui.SettingsMhFragment"
+        android:label="fragment_settings_mh"
+        tools:layout="@layout/fragment_settings_mh" />
+    <fragment
+        android:id="@+id/splashMhFragment"
+        android:name="com.aviatormysticalhero.ui.SplashMhFragment"
+        android:label="fragment_splash_mh"
+        tools:layout="@layout/fragment_splash_mh" />
+    <fragment
+        android:id="@+id/startMhFragment"
+        android:name="com.aviatormysticalhero.ui.StartMhFragment"
+        android:label="fragment_start_mh"
+        tools:layout="@layout/fragment_start_mh" />
+</navigation>
